@@ -1,6 +1,11 @@
 #pragma once
 
 #include "Kismet/BlueprintFunctionLibrary.h"
+
+#include "Components/SceneComponent.h"
+#include "GameFramework/Actor.h"
+#include "Engine/HitResult.h" 
+
 #include "VVAD_UtilsBPLib.generated.h"
 
 UCLASS()
