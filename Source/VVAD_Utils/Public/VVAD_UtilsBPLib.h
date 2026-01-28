@@ -103,19 +103,19 @@ public:
     UFUNCTION(BlueprintPure, Category = "Math|Integer", meta = (DisplayName = "(Integer) *-1"))
     static int32 NegateInt(const int32 In);
     
-    UFUNCTION(BlueprintPure, Category = "Math|Integer", meta = (CompactNodeTitle = "-1", DisplayName = "(Integer) -1", KeyWords = ""))
+    UFUNCTION(BlueprintPure, Category = "Math|Integer", meta = ( DisplayName = "(Integer) -1", KeyWords = ""))
     static int32 IntMinusOne(const int32 In);
 
-    UFUNCTION(BlueprintPure, Category = "Math|Integer", meta = (CompactNodeTitle = "+1", DisplayName = "(Integer) +1", KeyWords = ""))
+    UFUNCTION(BlueprintPure, Category = "Math|Integer", meta = ( DisplayName = "(Integer) +1", KeyWords = ""))
     static int32 IntPlusOne(const int32 In);
 
-    UFUNCTION(BlueprintCallable, Category = "Math|Integer", meta = (CompactNodeTitle = "+=", DisplayName = "(Integer) +=", KeyWords = "Integer add"))
+    UFUNCTION(BlueprintCallable, Category = "Math|Integer", meta = ( DisplayName = "(Integer) +=", KeyWords = "Integer add"))
     static void AddAssignInt(UPARAM(ref) int32& Variable, const int32 add);
 
-    UFUNCTION(BlueprintCallable, Category = "Math|Integer", meta = (CompactNodeTitle = "-=", DisplayName = "(Integer) -= ", KeyWords = "Integer subtract"))
+    UFUNCTION(BlueprintCallable, Category = "Math|Integer", meta = ( DisplayName = "(Integer) -= ", KeyWords = "Integer subtract"))
     static void SubtAssignInt(UPARAM(ref) int32& Variable, const int32 subtract);
 
-    UFUNCTION(BlueprintCallable, Category = "Math|Integer", meta = (CompactNodeTitle = "/=", DisplayName = "(Integer) /=", KeyWords = "Integer divide"))
+    UFUNCTION(BlueprintCallable, Category = "Math|Integer", meta = ( DisplayName = "(Integer) /=", KeyWords = "Integer divide"))
     static void DivideAssignInt(UPARAM(ref) int32& Variable, const int32 divider);
 
     UFUNCTION(BlueprintCallable, Category = "Math|Integer", meta = (CompactNodeTitle = "*=", DisplayName = "(Integer) *=", KeyWords = "Integer multiply"))
